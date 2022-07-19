@@ -12,6 +12,24 @@
 }  
 
 
+
+.btn-1{
+    background-color: rgb(0, 166, 221);
+    color: white;
+    padding: 10px 20px ;
+    border-radius:  20px;
+    border: none ;
+    transition: all 0.3s ease;
+}
+
+.btn-1:hover{
+    background-color: var(--VediksatBlue); 
+}
+
+ 
+/* NAVBAR STARTS */
+ 
+
 header {
     position: relative;
 } 
@@ -93,6 +111,142 @@ nav {
     transform: rotate(-45deg) translate(2px, -1px);
 }
 
+/* NAVBAR ENDS */
+
+.vhs-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+} 
+
+.vhs-1-1{
+    font-size: 50px;
+    margin: 0px 20px 0px 0px;
+}
+
+.vhs-1-1 h1:nth-child(1){
+    font-weight: lighter;
+}
+
+.vhs-1-1 h1:nth-child(3){
+    margin: 0px 0px 20px 0px;
+}
+
+.vhs-1-1 p {
+    font-size:  17px;
+    color: gray;
+    line-break: normal;
+}
+
+
+.vhs-1-2 img{
+    height: 500px;
+}
+
+
+.vhs-2{
+    background-color: #73C82C;
+    width: 100%;
+    margin: 10px 0px ;
+}
+
+
+.vhs-2 form {
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.vhs-2 form div {
+    margin: 0px 10px;
+}
+
+
+.vhs-2 form label {
+    color: #1d67cd;
+}
+
+
+.vhs-2 form input {
+    color: #1d67cd;
+    padding: 15px 30px;
+    background-color: #d5dff6;
+    border: 1px none;
+    border-radius: 10px;
+    margin: 10px 0px 0px 0px;
+}
+
+
+.vhs-2 form button {
+    background-color: #1d67cd;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.vhs-2 form button:hover {
+    background-color: #7b84f6;
+    transition: 0.3s;
+    cursor: pointer;
+} 
+
+
+::placeholder {
+    color: #1d67cd;
+    padding-left: 15px;
+}
+
+
+.vhs-3{
+    display: flex;
+}
+ 
+.vhs-3-1{
+    background: url('https://i1.wp.com/marabouservices.com/wp-content/uploads/2018/08/Blank-Square.png?ssl=1') no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 50%;
+}
+
+.vhs-3-2{
+    width: 50%;
+    padding: 0px 20px;
+  
+}
+
+.vhs-3-2 h1{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+
+.vhs-3-2 p{
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*For Navbar Responsiveness ***/
 
 @media only screen and (max-width:1200px) {
@@ -153,5 +307,72 @@ nav {
         display: block;
         padding: 20px 20px;
     }
+
+    .vhs-1{
+        flex-direction: column;
+    }
+
+    .vhs-1-1{
+        text-align: center;
+        margin: 20px 0px 20px 0px;
+        font-size: 30px;
+    }
+
+    .vhs-2 form {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vhs-2  form button {
+        margin: 10px;
+    } 
+
   
+}
+
+@media only screen and (max-width:900px) {
+
+    .vhs-3{
+        flex-direction: column;
+    }
+     
+    .vhs-3-1{
+        width: 100%; 
+    }
+    
+    .vhs-3-2{
+        width: 100%;
+        padding: 20px;
+      
+    }
+    
+    .vhs-3-2 h1{
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+    }
+    
+    
+    .vhs-3-2 p{
+        line-height: 30px;
+        text-align: justify;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width:550px) {
+
+
+    .vhs-1-1 h1{
+        font-size: ;
+    }
+    .vhs-1-2 img{
+        height: 300px;
+    }
+    
+    
+    
 }
