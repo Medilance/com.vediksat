@@ -13,10 +13,10 @@
 
 
 header{
-    /* height: 100vh;
-    background: url('/assets/images/a.png') no-repeat;
+    height: 100vh;
+    background: url('/assets/images/green_bg.png') no-repeat;
     background-size: cover ;
-    position: center; */
+    position: center;
 }
 
 
@@ -40,19 +40,15 @@ header{
  
 nav {
     display: flex;  
-    height: 90px;
     align-items: center;
     justify-content: space-around;
-    /* border-bottom: 1px solid rgb(34, 25, 25); */
-    background-color: var(--VediksatGreen);
-    
-
-}
+    padding: 20px 10px; 
+} 
 
 .nav__logo__container {
-    margin: 70px 0px 0px 0px;
+    /* margin: 70px 0px 0px 0px; */
 }
- 
+
 
 .nav__list__container ul {
     display: flex;
@@ -85,17 +81,17 @@ nav {
 .humburger {
     position: absolute;
     right: 20px;
-    top: 25px;
+    top: 40px;
     display: none;
     z-index: 1;
-    padding: 9px;
+    padding: 9px; 
     z-index: 9;
 }
 
 .humburger-line {
     height: 3px;
     width: 30px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 5px;
     transition: all 0.3s ease;
 }
