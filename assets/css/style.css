@@ -434,3 +434,17 @@ footer{
     
     
 }
+
+.div{
+    width: 392px;
+    height: 370px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #73C82C;
+    text-align: center;
+    margin: auto;
+}
+.div h4{
+    height: 40px;
+}
