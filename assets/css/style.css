@@ -17,6 +17,7 @@ header{
     background: url('/assets/images/green_bg.png') no-repeat;
     background-size: cover ;
     position: center;
+    overflow: hidden;
 }
 
 
@@ -42,7 +43,7 @@ nav {
     display: flex;  
     align-items: center;
     justify-content: space-around;
-    padding: 20px 10px; 
+    padding: 20px 10px 50px 10px ; 
 } 
 
 .nav__logo__container {
@@ -77,6 +78,94 @@ nav {
 .nav__list__container ul li a:hover {
     color: var(--VediksatBlue);
 }
+
+
+/* SLIDESHOW  */
+
+.slideShow__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__image__container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: header_image_fadeIn 3s ease ;
+}
+
+@keyframes header_image_fadeIn { 
+    0%{
+        transform: translateX(30px);
+        opacity: 0; 
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    
+}
+
+
+.header__image__container img{
+    height: 500px;
+    z-index: 2;
+}
+
+.header__image__container img:nth-child(2){
+    height: 350px;
+    position: absolute;
+    z-index: 1; 
+    animation: header_image_popUp 3s ease ;
+}
+
+@keyframes header_image_popUp  {
+    0%{
+       transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+}
+
+
+
+.header__data__container{
+    width: 50%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    padding: 60px; 
+    color: var(--VediksatBlue);
+    line-height: 30px;
+    font-size: 20px;
+    animation: header_data_upp 2s ease ;
+}
+
+@keyframes header_data_upp {
+    0%{
+        transform: translateY(60px);
+        opacity: 0; 
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+}
+
+.header__data__container h1{
+    color: white;
+    font-size: 50px;
+    margin: 0px 0px 20px 0px;
+}
+
+ 
+
+
 
 .humburger {
     position: absolute;
