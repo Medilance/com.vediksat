@@ -31,7 +31,7 @@
 
 header{
     height: auto;
-    background: url('/assets/images/green_bg.png') no-repeat;
+    background: url('/assets/images/green_bg.jpg') no-repeat;
     background-size: cover;
     position: center;
     overflow: hidden;
@@ -42,7 +42,7 @@ header{
 .home__header {
     height: 100vh;
     min-height: auto;
-    background: url('/assets/images/green_bg.png') no-repeat;
+    background: url('/assets/images/green_bg.jpg') no-repeat;
     background-size: cover;
     position: center;
     overflow: hidden;
@@ -276,11 +276,7 @@ nav {
     font-weight: lighter;
 }
 
-.vhs-1-1 h1:nth-child(3) {
-    margin: 0px 0px 20px 0px;
-}
-
-.vhs-1-1 p {
+.vhs-1-1 p { 
     font-size: 17px;
     color: gray;
     line-break: normal;
@@ -300,11 +296,15 @@ nav {
     margin: 20px 0px;
 }
 
-.vhs-2-1 {
+.vhs-2-1 {            
     margin: 10px 20px;
     opacity: 0;
+    background:url('../images/green_bg.jpg');
+    padding: 20px;
+    color: white;
+    border-radius: 5px; 
     transform: translateY(60px);
-    transition: all 0.9s ease;
+    transition: all 0.9s ease; 
 }
 
 .vhs-2-1:nth-child(2) {
@@ -324,21 +324,25 @@ nav {
     opacity: 1;
     transform: translateY(0px);
 }
-
+ 
 .vhs-2-1 img {
-    width: 200px;
+    width: 200px; 
+    height: 200px;
+    object-fit: cover ;
     filter: grayscale();
 }
 
 .vhs-2 button {
     border: none;
     border: none;
-    color: rgb(82, 212, 255);
-    font-size: 15px;
+    color: var(--VediksatBlue);
+    font-size: 15px; 
     margin: 10px 0px;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0);
 }
 
-
+ 
 .vhs-3 {
     display: flex;
 }
@@ -566,12 +570,6 @@ footer {
         align-items: center;
     }
 
-
-    .home__header {
-        height: 900px;
-    }
-
-
     .home__header::before {
         display: none;
     }
@@ -580,28 +578,27 @@ footer {
         flex-direction: column;
     }
 
-    ..home__header__image__container {
+    .header__image__container {
         width: 100%;
         padding: 0px;
     }
 
-    ..home__header__data__container {
+    .header__data__container {
         text-align: center;
         align-items: center;
         width: 100%;
-        padding: 10px;
+        padding: 20px;
     }
 
-    ..home__header__image__container img {
+    .header__image__container img {
         height: 300px;
         z-index: 2;
     }
 
-    ..home__header__image__container img:nth-child(2) {
+    .header__image__container img:nth-child(2) {
         height: 200px;
         position: absolute;
         z-index: 1;
-        animation: .home__header_image_popUp 5s ease infinite;
     }
 
 
