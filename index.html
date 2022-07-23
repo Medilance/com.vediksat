@@ -47,15 +47,47 @@
             <div class='humburger-line'></div>
         </div>
 
-         <div class="slideShow__container">
-            <div class="header__image__container">
-                <img src="./assets/images/slideshowimages/ss-1.png" alt="">
-                <img src="./assets/images/slideshowimages/ss-1-bg.png" alt=""> 
-            </div>  
-            <div class="header__data__container">
-                <h1>Dr Clean</h1>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto accusamus, perspiciatis nam aliquid id nostrum, error officia obcaecati sapiente rerum, veniam iusto voluptates deserunt ratione earum magnam odit aperiam!</P>
-                <button class="btn-1" style="width: 100px;">More</button>
+        <div class="slideShow__container">
+            <div class="slideShow">
+                <div class="header__image__container">
+                    <img src="./assets/images/slideshowimages/ss-1.png" alt="">
+                    <img src="./assets/images/slideshowimages/ss-1-bg.png" alt="">
+                </div>
+                <div class="header__data__container">
+                    <h1>Dr Clean</h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto accusamus, perspiciatis
+                        nam aliquid id nostrum, error officia obcaecati sapiente rerum, veniam iusto voluptates deserunt
+                        ratione earum magnam odit aperiam!</P>
+                    <button class="btn-1" style="width: 100px;">More</button>
+                </div>
+            </div>
+
+            <div class="slideShow">
+                <div class="header__image__container">
+                    <img  src="./assets/images/slideshowimages/ss-2.png" alt="">
+                    <img src="./assets/images/slideshowimages/ss-1-bg.png" alt="">
+                </div>
+                <div class="header__data__container">
+                    <h1>GILOY & TULSI</h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto accusamus, perspiciatis
+                        nam aliquid id nostrum, error officia obcaecati sapiente rerum, veniam iusto voluptates deserunt
+                        ratione earum magnam odit aperiam!</P>
+                    <button class="btn-1" style="width: 100px;">More</button>
+                </div>
+            </div>
+
+            <div class="slideShow">
+                <div class="header__image__container">
+                    <img  src="./assets/images/slideshowimages/ss-4.png" alt=""> 
+                    <img src="./assets/images/slideshowimages/ss-1-bg.png" alt="">
+                </div>
+                <div class="header__data__container">
+                    <h1>PLATOHIT </h1>
+                    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto accusamus, perspiciatis
+                        nam aliquid id nostrum, error officia obcaecati sapiente rerum, veniam iusto voluptates deserunt
+                        ratione earum magnam odit aperiam!</P>
+                    <button class="btn-1" style="width: 100px;">More</button>
+                </div>
             </div>
         </div>
 
@@ -80,7 +112,7 @@
 
     </section>
 
- 
+
 
     <section class="vhs-2">
         <div class="vhs-2-1">
@@ -91,12 +123,12 @@
         </div>
         <div class="vhs-2-1">
             <img src="https://i1.wp.com/marabouservices.com/wp-content/uploads/2018/08/Blank-Square.png?ssl=1" alt="">
-            <h1>Title</h1>  
+            <h1>Title</h1>
             <p>Lorem, ipsum dolor sit amet.</p>
             <button class="btn-2">Read More</button>
-        </div> 
+        </div>
         <div class="vhs-2-1">
-            <img src="https://i1.wp.com/marabouservices.com/wp-content/uploads/2018/08/Blank-Square.png?ssl=1" alt=""> 
+            <img src="https://i1.wp.com/marabouservices.com/wp-content/uploads/2018/08/Blank-Square.png?ssl=1" alt="">
             <h1>Title</h1>
             <p>Lorem, ipsum dolor sit amet.</p>
             <button class="btn-2">Read More</button>
@@ -149,16 +181,15 @@
         }
 
 
-        window.addEventListener('scroll',()=>{
+        window.addEventListener('scroll', () => {
             const section_2 = document.querySelector('.vhs-2');
             const section_2_element = document.querySelectorAll('.vhs-2-1');
-            const contentHeight =  section_2.getBoundingClientRect().top;
+            const contentHeight = section_2.getBoundingClientRect().top;
 
             const screenPosition = window.innerHeight;
 
-            if(contentHeight < screenPosition)
-            {
-                section_2_element.forEach(e=>{
+            if (contentHeight < screenPosition) {
+                section_2_element.forEach(e => {
                     e.classList.add('vhs-2-1_active');
                 })
             }
