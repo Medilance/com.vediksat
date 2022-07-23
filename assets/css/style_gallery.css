@@ -1,0 +1,31 @@
+:root {
+    --VediksatBlue: #020B71;
+    --VediksatGreen: #73C82C;
+}
+
+.vgs-1{
+    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+  
+.vgs-1 img{
+    width: 300px; 
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid rgba(128, 128, 128, 0.299);
+    border-radius: 10px ;
+    margin: 20px 10px;
+    transition:  transform 0.3s ease;
+}
+
+.vgs-1 img:hover{
+ 
+    transform: scale(1.05);
+    border: 2px solid rgba(128, 128, 128, 0.571);
+}
+
+ 
