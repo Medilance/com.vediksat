@@ -17,7 +17,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/style_gallery.css">
+    <link rel="stylesheet" href="assets/css/style_products.css">
 
     <title>Vediksat</title> 
 </head>
@@ -70,24 +70,6 @@
             humbuerger.classList.toggle('humburger-menu');;
         }
 
-        fetch('./gallery.json')
-        .then(function(response){ 
-            return response.json();
-        }) 
-        .then(function (data)
-        {
-            for(var i = 0; i<data.length;i++)
-            {
-             const  container = document.querySelector(".vgs-1");
-             const item = document.createElement("img");
-             container.appendChild(item);
-             item.src = data[i].image; 
-
-            }
-        }) 
-        .catch(function(err){
-            console.log(err);
-        })
 
     </script>  
 
