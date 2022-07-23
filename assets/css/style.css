@@ -299,12 +299,14 @@ nav {
 .vhs-2-1 {            
     margin: 10px 20px;
     opacity: 0;
-    background:url('../images/green_bg.jpg');
+    /* background:url('../images/green_bg.jpg'); */
     padding: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 5px; 
-    transform: translateY(60px);
+    transform: translateY(60px); 
     transition: all 0.9s ease; 
+    border-bottom: 20px solid var(--VediksatGreen);
+    border-top: 10px solid var(--VediksatGreen);
 }
 
 .vhs-2-1:nth-child(2) {
