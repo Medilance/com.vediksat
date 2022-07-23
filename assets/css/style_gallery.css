@@ -1,0 +1,19 @@
+:root {
+    --VediksatBlue: #020B71;
+    --VediksatGreen: #73C82C;
+}
+
+.vgs-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 20px;
+    padding: 30px;
+}
+  
+.vgs-1 img{
+    width: 300px; 
+    height: 400px;
+    object-fit: cover;
+    border: 2px solid rgba(128, 128, 128, 0.299);
+    border-radius: 10px ;
+}
