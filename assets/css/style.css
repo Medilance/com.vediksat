@@ -34,9 +34,7 @@ header{
     background: url('/assets/images/green_bg.jpg') no-repeat;
     background-size: cover;
     position: center;
-    overflow: hidden;
-    position: relative;
-      
+    position: relative;   
 }
 
 .home__header {

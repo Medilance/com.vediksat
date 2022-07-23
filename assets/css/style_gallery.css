@@ -10,6 +10,8 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
+
+    z-index: -1;
 }
   
 .vgs-1 img{
