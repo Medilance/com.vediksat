@@ -14,11 +14,238 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
+
   body {
     font: 400 15px Lato, sans-serif;
     /* line-height: 1.8; */
     color: #818181;
   }
+  header{
+    height: auto;
+    background: url('/assets/images/green_bg.jpg') no-repeat;
+    background-size: cover;
+    position: center;
+    overflow: hidden;
+    position: relative;
+      
+}
+
+.home__header {
+    height: 100vh;
+    min-height: auto;
+    background: url('/assets/images/green_bg.jpg') no-repeat;
+    background-size: cover;
+    position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.home__header::before {
+    content: '';
+    width: 45%;
+    background-color: rgb(255, 255, 255);
+    height: inherit;
+    position: absolute;
+    z-index: 1;
+}
+
+/* NAVBAR STARTS */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 20px;
+    z-index: 3;
+}
+
+.nav__logo__container {
+    z-index: 3;
+}
+
+.nav__list__container ul {
+    display: flex;
+    list-style: none;
+}
+
+
+.nav__list__container ul li {
+    display: block;
+    padding: 20px 20px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.103);
+}
+
+.nav__list__container ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav__list__container ul li a:hover {
+    color: var(--VediksatBlue);
+}
+
+
+
+
+.humburger {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    display: none;
+    z-index: 1;
+    padding: 9px;
+    z-index: 9;
+}
+
+.humburger-line {
+    height: 3px;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.humburger-line:nth-child(2) {
+    width: 20px;
+}
+
+.menu:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.menu:nth-child(2) {
+    transform: translateX(-30px);
+    opacity: 0;
+}
+
+.menu:nth-child(3) {
+    transform: rotate(-45deg) translate(2px, -1px);
+}
+
+/* NAVBAR ENDS */
+
+
+
+/* SLIDESHOW  */
+
+.slideShow__container {
+    position: relative;
+    z-index: 2;
+}
+
+.slideShow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: slideShow 15s ease infinite;
+    opacity: 0;
+}
+
+.slideShow:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.slideShow:nth-child(3) {
+    animation-delay: 10s;
+
+}
+
+@keyframes slideShow {
+    25% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+}
+
+.header__image__container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header__image__container img {
+    height: 500px;
+    z-index: 2;
+}
+
+.header__image__container img:nth-child(2) {
+    height: 350px;
+    position: absolute;
+    z-index: 1;
+    animation: header_image_popUp 5s ease infinite;
+}
+
+@keyframes header_image_popUp {
+    0% {
+        transform: scale(0);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+}
+
+
+
+.header__data__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 90px 0px 0px;
+    color: var(--VediksatBlue);
+    line-height: 30px;
+    font-size: 20px;
+    animation: header_data_upp 5s ease infinite;
+}
+
+@keyframes header_data_upp {
+    0% {
+        transform: translateY(60px);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+
+}
+ 
+.header__data__container h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0px 0px 20px 0px;
+    line-height: 50px;
+}
+
+
+/* SLIDESHOW END */
+
+
+
+
   h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -74,11 +301,152 @@
     .logo {
       font-size: 150px;
     }
+    
   }
+  footer {
+    background-color: #090606 !important;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10px;
+    margin-top: 10px;
+}
+
+.vf-1 p {
+    color: rgb(149, 149, 149);
+}
+
+.vf-1-1 ul {
+    display: flex;
+    list-style: none;
+}
+
+.vf-1-1 ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 10px 20px 10px 0px;
+}
+
+.vf-2 {
+    display: flex;
+}
+
+.vf-2 a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    background-color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 15px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+
+.vf-2 a:nth-child(1):hover {
+    background: linear-gradient(150deg, pink, purple);
+}
+
+.vf-2 a:nth-child(2):hover {
+    background-color: #1d67cd;
+}
+
+.vf-2 a:nth-child(2):hover {
+    background-color: #5599f7;
+}
+
+.vf-2 a:nth-child(3):hover {
+    background-color: #1d67cd;
+}
+
+
+
+.vf-2 a:nth-child(4):hover {
+    background-color: #3ecfff;
+}
+
+
+
 </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
     <!-- Container (About Section) -->
+
+    <header class="home__header">
+      <nav>
+          <div class="nav__logo__container">
+              <img src="images/vediksat-logo.png" alt="">
+          </div>
+
+          <div class="nav__list__container">
+              <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="products.html">PRODUCTS</a></li>
+                  <li><a href="about.html">ABOUT US</a></li>
+                  <li><a href="gallery.html">GALLERY</a></li>
+                  <li><a href="contact-us.html">CONTACT US</a></li>
+              </ul>
+          </div>
+
+      </nav>
+
+      <div class='humburger' onclick="menu()">
+          <div class='humburger-line'></div>
+          <div class='humburger-line'></div>
+          <div class='humburger-line'></div>
+      </div>
+
+      <div class="slideShow__container">
+          <div class="slideShow">
+              <div class="header__image__container">
+                  <img src="https://raw.githubusercontent.com/Medilance/com.vediksat/Mohit/assets/images/slideshowimages/ss-1.png?token=GHSAT0AAAAAABVG7BRGRCTKUZTCSQ6CYKHIYW6P3RA" alt="">
+                  <img src="https://raw.githubusercontent.com/Medilance/com.vediksat/Mohit/assets/images/slideshowimages/ss-1-bg.png?token=GHSAT0AAAAAABVG7BRHBUE4FGS6AHX5PQWUYW6P2JA" alt="">
+              </div> 
+              <div class="header__data__container">
+                  <h1>Dr CLEAN</h1>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto accusamus, perspiciatis
+                      nam aliquid id nostrum, error officia obcaecati sapiente rerum, veniam iusto voluptates deserunt
+                      ratione earum magnam odit aperiam!</P>
+                  <button class="btn-primary " style="width: 100px;">More</button>
+              </div>
+          </div>
+
+          <div class="slideShow">
+              <div class="header__image__container">
+                  <img  src="https://raw.githubusercontent.com/Medilance/com.vediksat/Mohit/assets/images/slideshowimages/ss-2.png?token=GHSAT0AAAAAABVG7BRGBOIALQWY2BFJM5IIYW6P47Q" alt="">
+                  <img src="https://raw.githubusercontent.com/Medilance/com.vediksat/Mohit/assets/images/slideshowimages/ss-2-bg.png?token=GHSAT0AAAAAABVG7BRG4UVRUCQFKZTDQZVYYW6P4NQ" alt="">
+              </div>
+              <div class="header__data__container">
+                  <h1>GILOY & TULSI</h1>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto accusamus, perspiciatis
+                      nam aliquid id nostrum, error officia obcaecati sapiente rerum, veniam iusto voluptates deserunt
+                      ratione earum magnam odit aperiam!</P>
+                  <button class="btn-primary" style="width: 100px;">More</button>
+              </div>
+          </div>
+
+          <div class="slideShow">
+              <div class="header__image__container">
+                  <img  src="https://raw.githubusercontent.com/Medilance/com.vediksat/Mohit/assets/images/slideshowimages/ss-3.png?token=GHSAT0AAAAAABVG7BRHCCIPEQUJ74DO34VWYW6P62Q" alt=""> 
+                  <img src="https://raw.githubusercontent.com/Medilance/com.vediksat/Mohit/assets/images/slideshowimages/ss-3-bg-1.png?token=GHSAT0AAAAAABVG7BRH4PKAKBJTYSBKWSFSYW6P55Q" alt="">
+              </div>
+              <div class="header__data__container"> 
+                  <h1>PLATOHIT </h1>
+                  <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa architecto accusamus, perspiciatis
+                      nam aliquid id nostrum, error officia obcaecati sapiente rerum, veniam iusto voluptates deserunt
+                      ratione earum magnam odit aperiam!</P>
+                  <button class="btn-primary " style="width: 100px;">More</button>
+              </div>
+          </div>
+      </div>
+
+
+  </header>
+
 <div id="about" class="container-fluid" style="background-color: white;">
     <div class="row">
       <div class="col-sm-8">
@@ -205,7 +573,26 @@
 
 </div>
 
+<footer style="background-color: black;">
+  <div class="vf-1">
+      <p>©2022 Vedicsat . All rights reserved.</p>
+      <div class="vf-1-1">
+          <ul>
+              <li><a href="aboutus.html">About Us</a></li>
+              <li><a href="roduct.html">Products</a></li>
+              <li><a href="">Terms and Conditions</a></li>
+              <li><a href=""> Privacy Statement</a></li>
+          </ul>
+      </div>
+  </div>
 
+  <div class="vf-2 ">
+      <a><i class="fa-brands fa-instagram"></i></a>
+      <a><i class="fa-brands fa-facebook-f"></i></a>
+      <a> <i class="fa-brands fa-linkedin-in"></i> </a>
+      <a> <i class="fa-brands fa-twitter"></i></a>
+  </div>
+</footer>
   <script>
     $(document).ready(function(){
       // Add smooth scrolling to all links in navbar + footer link
