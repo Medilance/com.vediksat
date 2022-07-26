@@ -94,3 +94,15 @@ textarea {
 .contact-detail-section{
     padding-top: 0px;
 }
+
+
+.div {
+    width: 392px;
+    height: 370px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #73c82c;
+    text-align: center;
+    margin: auto;
+}
