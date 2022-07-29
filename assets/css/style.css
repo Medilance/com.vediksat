@@ -622,3 +622,18 @@ footer {
 
 }
 
+
+
+
+/*////////////////Gallery////////////////////Gallery////////////////////////////////Gallery///////////////////////////////////////*/
+
+.vgs-1 {
+    margin: 25px 45px 25px 45px;
+    align-items: center;
+}
+
+/*////Feature///////Feature//////Feature//////Feature//////Feature//////Feature//////Feature//////Feature//////Feature//*/
+
+a {
+    cursor: pointer;
+}

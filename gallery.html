@@ -8,6 +8,8 @@
     <meta name="msapplication-navbutton-color" content="#000000">
     <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
@@ -20,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style_gallery.css">
 
-    <title>Vediksat</title> 
+    <title>Vediksat HerbalCare - A Division of Medilance</title> 
 </head>
 
 <body>
@@ -28,16 +30,18 @@
     <header>
         <nav>
             <div class="nav__logo__container">
-                <img src="./assets/images/vediksat-logo.png" alt="">
+                <a href="index.html">
+                    <img src="./assets/images/vediksat-logo.png" alt="Vediksat Logo">
+                </a>
             </div>
 
             <div class="nav__list__container">
                 <ul>
-                    <li class="active"><a href="index.html">HOME</a></li>
-                    <li><a href="products.html">PRODUCTS</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
-                    <li><a href="contact-us.html">CONTACT US</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -83,7 +87,7 @@
              const item = document.createElement("img");
              container.appendChild(item);
              item.src = data[i].image; 
-             
+
             }
         }) 
         .catch(function(err){
@@ -96,23 +100,29 @@
 
 
 <footer>
+    <div class="nav__logo__container">
+        <a href="index.html">
+            <img src="./assets/images/vediksat-logo.png" alt="Vediksat Logo">
+        </a>
+    </div>
+
     <div class="vf-1">
-        <p>©2022 Vedicsat . All rights reserved.</p>
         <div class="vf-1-1">
             <ul>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="roduct.html">Products</a></li>
-                <li><a href="">Terms and Conditions</a></li>
-                <li><a href=""> Privacy Statement</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="https://medilance.in/privacy-policy" style="cursor: pointer;">Privacy Statement</a></li>
+                <li><a href="https://medilance.in/terms" style="cursor: pointer;">Terms Of Use</a></li>
             </ul>
+            <p>© 2022 Medilance Healthcare. All rights reserved.</p>
+
         </div>
     </div>
 
     <div class="vf-2 ">
-        <a><i class="fa-brands fa-instagram"></i></a>
-        <a><i class="fa-brands fa-facebook-f"></i></a>
-        <a> <i class="fa-brands fa-linkedin-in"></i> </a>
-        <a> <i class="fa-brands fa-twitter"></i></a>
+        <a href="https://instagram.com/vediksat"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/vediksat"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/company/medilance"> <i class="fa-brands fa-linkedin-in"></i> </a>
     </div>
 </footer>
 
